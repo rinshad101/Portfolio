@@ -56,7 +56,15 @@ export const profile: Profile = {
   githubUsername: 'rinshad101',
 }
 
-export const siteUrl = (process.env.NEXT_PUBLIC_SITE_URL ?? 'http://localhost:3000').replace(/\/$/, '')
+/**
+ * Public site URL for canonical links, sitemap and Open Graph.
+ * Order: explicit NEXT_PUBLIC_SITE_URL → Vercel's production domain (set automatically on Vercel) → localhost.
+ */
+export const siteUrl = (
+  process.env.NEXT_PUBLIC_SITE_URL ||
+  (process.env.VERCEL_PROJECT_PRODUCTION_URL ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}` : '') ||
+  'http://localhost:3000'
+).replace(/\/$/, '')
 
 /** Social links that have been configured (non-empty href). */
 export const activeSocials: SocialLink[] = profile.socials.filter((s) => s.href.trim() !== '')
