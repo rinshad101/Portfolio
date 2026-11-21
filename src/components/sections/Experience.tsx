@@ -63,7 +63,7 @@ export function Experience() {
             {experience.map((item, i) => {
               const left = i % 2 === 0
               return (
-                <li key={item.id} className="relative grid gap-6 pl-10 md:grid-cols-2 md:gap-16 md:pl-0">
+                <li key={item.id} className="relative grid grid-cols-1 gap-6 pl-10 md:grid-cols-2 md:gap-16 md:pl-0">
                   <span
                     data-timeline-dot
                     aria-hidden="true"
@@ -88,6 +88,7 @@ export function Experience() {
                       <p className="mt-1 text-sm text-fg-2">{item.organization}</p>
                       <p className="mt-4 text-sm leading-relaxed text-fg-2">{item.summary}</p>
 
+                      {item.responsibilities.length > 0 && (
                       <ul className="mt-4 space-y-1.5 text-sm text-fg-2">
                         {item.responsibilities.map((r) => (
                           <li key={r} className="flex gap-2">
@@ -96,6 +97,7 @@ export function Experience() {
                           </li>
                         ))}
                       </ul>
+                      )}
 
                       {item.contributions.length > 0 && (
                         <>
@@ -111,6 +113,7 @@ export function Experience() {
                         </>
                       )}
 
+                      {item.stack.length > 0 && (
                       <ul className="mt-5 flex flex-wrap gap-1.5" aria-label="Technologies">
                         {item.stack.map((s) => (
                           <li key={s} className="rounded-full border border-line px-2.5 py-0.5 font-mono text-[11px] text-fg-2">
@@ -118,6 +121,7 @@ export function Experience() {
                           </li>
                         ))}
                       </ul>
+                      )}
                     </article>
                   </Reveal>
                 </li>

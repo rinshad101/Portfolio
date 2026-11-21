@@ -27,7 +27,7 @@ export function Projects() {
           </Reveal>
         </div>
 
-        <div className="mt-14 grid gap-5 lg:mt-20 lg:grid-cols-2 lg:gap-6">
+        <div className="mt-14 grid grid-cols-1 gap-5 lg:mt-20 lg:grid-cols-2 lg:gap-6">
           {featured && (
             <Reveal className="lg:col-span-2" y={48}>
               <ProjectCard project={featured} index={0} featured />

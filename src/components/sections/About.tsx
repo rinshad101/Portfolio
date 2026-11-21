@@ -118,7 +118,7 @@ export function About() {
           About
         </p>
 
-        <div className="mt-8 grid gap-12 lg:grid-cols-[1fr_1.1fr] lg:gap-20">
+        <div className="mt-8 grid grid-cols-1 gap-12 lg:grid-cols-[1fr_1.1fr] lg:gap-20">
           <div>
             <SplitHeading id="about-title" className="display-title">
               More Than Just <span className="text-gradient">Writing Code.</span>

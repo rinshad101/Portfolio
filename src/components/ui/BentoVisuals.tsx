@@ -111,8 +111,8 @@ function Orbit() {
   const tools: Array<[string, string, string]> = [
     ['Git', '0s', '4.2rem'],
     ['Docker', '-5s', '4.2rem'],
-    ['Maven', '-10s', '4.2rem'],
-    ['GitHub', '-15s', '4.2rem'],
+    ['K8s', '-10s', '4.2rem'],
+    ['AWS', '-15s', '4.2rem'],
   ]
   return (
     <div className="relative grid h-full min-h-40 place-items-center">

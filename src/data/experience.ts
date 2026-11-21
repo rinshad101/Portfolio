@@ -1,52 +1,52 @@
 import type { ExperienceItem } from '@/types'
 
 /**
- * [EDIT] Placeholder milestones. Replace with your real roles and set
- * `placeholder: false`. Never list contributions you cannot stand behind.
+ * Sources: CV (Rinshad_KK_Resume, July 2025) and the public LinkedIn profile.
+* Entries marked `placeholder: true` need details confirmed — never list
+ * contributions you cannot stand behind.
  */
 export const experience: ExperienceItem[] = [
   {
-    id: 'current',
-    role: 'Software Engineer',
-    organization: 'Company Name',
-    period: '20XX — Present',
-    location: 'City, Country',
-    summary: 'Describe the team, the product and your role in one or two sentences.',
-    responsibilities: [
-      'Design and build REST APIs with Java and Spring Boot',
-      'Implement authentication and authorization with Spring Security and JWT',
-      'Model data and write efficient queries with JPA, Hibernate and Oracle SQL',
-    ],
-    contributions: ['Add a specific contribution you are proud of', 'Add another verifiable contribution'],
-    stack: ['Java', 'Spring Boot', 'Spring Security', 'Oracle', 'JPA'],
-    placeholder: true,
+    id: 'lenok',
+    role: 'Java Developer',
+    organization: 'Lenok',
+    period: 'Dec 2025 — Present',
+    location: 'Kerala, India',
+    summary: 'Java Developer building and maintaining backend applications.',
+    // [EDIT] Add 2–3 responsibilities and the main technologies you use at Lenok.
+    responsibilities: [],
+    contributions: [],
+    stack: ['Java'],
+    placeholder: false,
   },
   {
-    id: 'previous',
-    role: 'Junior Developer',
-    organization: 'Company Name',
-    period: '20XX — 20XX',
-    location: 'City, Country',
-    summary: 'Describe what you worked on and what you learned.',
+    id: 'bridgeon',
+    role: 'Java Full Stack Intern',
+    organization: 'Bridgeon Solutions',
+    period: '2024 — Nov 2025',
+    location: 'Kerala, India',
+    summary:
+      'Full-stack internship focused on Java, Spring Boot and React — from REST API design to responsive, user-friendly interfaces.',
     responsibilities: [
-      'Built and maintained features across backend and frontend',
-      'Wrote unit and integration tests',
-      'Collaborated through code review and Git-based workflows',
+      'Built a task-management web application with Java, Spring Boot, React.js and MySQL',
+      'Designed responsive front-end interfaces with HTML, CSS and JavaScript, focusing on usability and clean design',
+      'Integrated front-end and back-end through RESTful APIs, strengthening data-handling skills',
+      'Used Git for version control throughout development',
     ],
-    contributions: ['Add a specific contribution'],
-    stack: ['Java', 'SQL', 'React', 'Git'],
-    placeholder: true,
+    contributions: [],
+    stack: ['Java', 'Spring Boot', 'React', 'MySQL', 'Git', 'REST APIs'],
+    placeholder: false,
   },
   {
     id: 'education',
-    role: 'Degree or Certification',
-    organization: 'Institution Name',
-    period: '20XX — 20XX',
-    location: 'City, Country',
-    summary: 'Your education, bootcamp or a key certification.',
-    responsibilities: ['Relevant coursework or focus areas', 'Capstone or thesis topic'],
+    role: 'Diploma in Computer Engineering',
+    organization: 'Government Polytechnic College, Muttom',
+    period: '2021 — 2024',
+    location: 'Thodupuzha, Kerala',
+    summary: 'Three-year diploma in Computer Engineering.',
+    responsibilities: [],
     contributions: [],
-    stack: ['Java', 'Data Structures', 'Databases'],
-    placeholder: true,
+    stack: [],
+    placeholder: false,
   },
 ]

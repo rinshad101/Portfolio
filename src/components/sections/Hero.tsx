@@ -51,7 +51,7 @@ export function Hero() {
         <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-b from-transparent to-bg" />
       </div>
 
-      <div className="container-x grid items-center gap-10 lg:grid-cols-[1.15fr_1fr] lg:gap-6">
+      <div className="container-x grid grid-cols-1 items-center gap-10 lg:grid-cols-[1.15fr_1fr] lg:gap-6">
         <div className="relative z-10">
           <p
             data-hero="status"

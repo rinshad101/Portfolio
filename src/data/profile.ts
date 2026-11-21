@@ -7,54 +7,53 @@ import type { Profile, SocialLink } from '@/types'
  * ─────────────────────────────────────────────────────────────
  */
 export const profile: Profile = {
-  name: 'Your Name', // [EDIT]
-  initials: 'YN', // [EDIT]
-  role: 'Software Engineer',
-  headline: 'Software Engineer / Backend Developer',
-  positioning: 'Software Engineer | Backend Developer | Building Scalable Digital Systems',
+  name: 'Rinshad KK',
+  initials: 'R',
+  role: 'Java Full Stack Developer',
+  headline: 'Java Full Stack Developer / Backend Engineer',
+  positioning: 'Java Full Stack Developer | Backend Engineer | Building Scalable Digital Systems',
   brand: 'Beyond the Code.',
   tagline: 'Engineering the Future. One Line at a Time.',
   heroIntro:
     'I build reliable backend systems, scalable APIs, and seamless digital experiences that turn complex ideas into powerful software.',
   description:
-    'Software engineer specializing in Java, Spring Boot, REST APIs, microservices and secure backend architecture, with a modern React and Next.js frontend toolkit.',
-  location: 'Your City, Country', // [EDIT]
-  availability: { available: true, label: 'Available for new opportunities' }, // [EDIT]
-  email: 'hello@example.com', // [EDIT]
-  resume: { href: '/resume.pdf', fileName: 'resume.pdf' }, // [EDIT] replace public/resume.pdf
+    'Rinshad KK — Java Full Stack Developer from Kozhikode, Kerala, building Spring Boot microservices, secure REST APIs and React frontends.',
+  location: 'Kozhikode, Kerala',
+  availability: { available: true, label: 'Open to backend roles' },
+  email: 'rinshadkk101@gmail.com',
+  resume: { href: '/resume.pdf', fileName: 'Rinshad_KK_Resume.pdf' },
   bio: [
-    // [EDIT] Write your own story here.
-    'I am a software engineer who enjoys the parts of a system most people never see: the APIs, data models and security layers that keep a product fast, correct and trustworthy.',
-    'My core toolkit is Java and Spring Boot. I design RESTful services, secure them with Spring Security and JWT, and model data carefully with Hibernate, JPA and Oracle SQL. On the frontend I work with React and Next.js to bring those systems to life.',
-    'I care about clean architecture, readable code and decisions that still make sense a year later.',
+    "I'm Rinshad, a Java Full Stack Developer who designs and builds robust web applications with Java, Spring Boot and React — with a strong pull toward the backend.",
+    'I enjoy breaking systems into well-defined Spring Boot microservices: API gateways, service discovery with Eureka, JWT-based authentication, and asynchronous communication with Kafka — all containerised with Docker. On the frontend I build responsive interfaces with React, Redux and Tailwind CSS.',
+    "I care about clean architecture, agile ways of working, and software that stays scalable and user-centric as it grows. I'm always looking for challenging projects that stretch what I know.",
   ],
   cards: [
     {
       title: 'Engineering Philosophy',
-      body: 'Simple over clever. Explicit contracts, small focused services and code that the next engineer can understand quickly.',
+      body: 'Clean architecture over clever shortcuts. Clear service boundaries, explicit API contracts and code the next engineer can understand quickly.',
     },
     {
       title: 'Backend Specialization',
-      body: 'Spring Boot services, REST API design, authentication and authorization, and relational data modelling with JPA and SQL.',
+      body: 'Spring Boot microservices, REST API design, JWT authentication and role-based access, and data persistence with JPA and SQL.',
     },
     {
       title: 'Continuous Learning',
-      body: 'Always sharpening fundamentals — distributed systems, testing strategies and the evolving Java and React ecosystems.',
+      body: 'Always sharpening the craft — distributed systems, event-driven design with Kafka, cloud deployment and the evolving Java and React ecosystems.',
     },
   ],
   snapshot: {
-    role: 'Software Engineer',
+    role: 'Java Full Stack Developer',
     focus: 'Backend Development',
-    stack: ['Java', 'Spring Boot', 'React'],
+    stack: ['Java', 'Spring Boot', 'Microservices', 'React'],
     mindset: 'Build. Learn. Improve.',
   },
   socials: [
-    // [EDIT] Add full URLs. Links with an empty href are hidden automatically.
-    { id: 'github', label: 'GitHub', href: '', handle: '@your-username' },
-    { id: 'linkedin', label: 'LinkedIn', href: '', handle: 'in/your-profile' },
-    { id: 'x', label: 'X', href: '', handle: '@your-handle' },
+    // Links with an empty href are hidden automatically.
+    { id: 'github', label: 'GitHub', href: 'https://github.com/rinshad101', handle: '@rinshad101' },
+    { id: 'linkedin', label: 'LinkedIn', href: 'https://www.linkedin.com/in/rinshad-kk-1012b6306', handle: 'in/rinshad-kk' },
+    { id: 'x', label: 'X', href: '', handle: '' },
   ],
-  githubUsername: '', // [EDIT] e.g. 'octocat' — enables live repositories in the GitHub section
+  githubUsername: 'rinshad101',
 }
 
 export const siteUrl = (process.env.NEXT_PUBLIC_SITE_URL ?? 'http://localhost:3000').replace(/\/$/, '')
